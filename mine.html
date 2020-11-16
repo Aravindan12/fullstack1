@@ -1,0 +1,94 @@
+<html>
+    <head>
+        addon
+        <style>
+            body{
+
+                background-color: tomato;
+                font-size: 2em;
+            }
+            
+            h1  { background-color:teal;
+            text-align: center;
+            font-weight: lighter;
+            }
+            h2{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p{
+                font-family: cursive;
+            }
+            #this{
+                text-decoration: underline;
+            }
+            }
+            p::first-letter{
+                font-size: 3em;
+            }
+            #wrapper{
+
+                width: 50px;
+                border-width: thicK;
+                border-color: dimgray;
+            }
+            h2 {
+                border: dimgray;
+            }
+        </style>
+        <script type="text/javascript">
+        alert('alert box')
+        console.log('a message in console')
+        var age= 21;
+        var gpa=8.7;
+        console.log(age);
+        console.log(gpa);
+        //var age=8;
+        //var permission=false;
+        //if(age >=18 || permission){
+        //    console.log("allowed");
+        /*}
+        else{
+            console.log("not allowed");
+        }
+        */
+        /*var age = prompt('what is your age',18);
+        if(age<18){
+            var permission=confirm('i have');
+            if(permission){
+                alert("allowed");
+            }else{
+                alert("not allowed")
+            }
+
+        }else {
+            alert ("allowed");
+        }*/
+        var month=prompt('enter a number between 1 to 12',6)
+        for(var days=1;days<=31;days++){
+            if((month==4||month==6||month==9||month==11)&&days==31)
+            cinsole.log('day:'days);
+            if (month == 2 && days ==28)break;
+        }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Exclusive shop for men
+        </h1>
+        <h2>
+            happy welcome
+        </h2>
+      
+<p>
+    <span id="this">this</span> is  a showroom for men who are looking for a custom design dressing.
+</p>
+<div  id="wrapper">  
+<ol>
+    <li id="left">left</li>
+    <li id="right">right</li>
+    <li id="top">top</li>
+    <li id="boytom">bottom</li>
+</ol>
+</div>
+    </body>
+</html>

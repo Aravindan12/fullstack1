@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            function getresults(markList){
+                var result = markList.every(function(mark){
+                    return mark > 45;
+                });
+                if(result){
+                    return'all pass';
+                }else{
+                    return 'it seems you fialed in some subjects';
+                }
+            }
+            console.log(getresults([66,77,88,99,98]));//every method
+            function getresults(results){
+                var result=results.some(isPass);
+                if(result){
+                    return 'only some students are passed';
+                }
+                else{
+                    return 'all are passed';
+                }
+            }
+            function isPass(result){
+                return result != 'pass';
+            }
+            console.log(getresults(['pass','pass','pass','pass']));
+            var num=[10,20,30,40,50];
+            var sum=num.reduce(function(accumulator, currentValue,index){
+                console.log('iteration:',index);
+                console.log('Accumulator:',accumulator);
+                console.log('Current value:',currentValue);
+                return accumulator+currentValue;
+
+            });
+            console.log(sum);
+            var factorial= function(num){
+                if(num<=1){
+                    return 1;
+                } else {
+                    return num* factorial(num-1);
+                }
+            }
+            console.log('factorial of 5:', factorial(5));
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
